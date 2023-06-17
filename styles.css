@@ -159,6 +159,8 @@ body {
 }
 
 .intro_text {
+    display: flex;
+    flex-direction: column;
     color: var(--secondary-text-color);
     text-align: justify;
 }
