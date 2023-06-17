@@ -165,6 +165,11 @@ body {
     text-align: justify;
 }
 
+.skills__container{
+    /* margin: 20px 0; */
+    margin-bottom: 20px;
+}
+
 .skills__header {
     color: var(--secondary-text-color);
     text-align: center;
@@ -173,7 +178,7 @@ body {
 
 .skills__text {
     color: var(--secondary-text-color);
-    text-align: justify;
+    text-align: center;
 }
 
 /* Experience and additional info styles */
