@@ -17,9 +17,9 @@ body {
     --border-color: #ff9a0045;
     --text-decoration-color: #ff9a00;
     --footer-background-color: #02172a;
-    --footer-text-color: rgba(255, 255, 255, 0.4);
+    --footer-text-color: rgb(255 255 255 / 40%);
     --accent-color: #ff6b09;
-    --primary-white-color: #ffffff
+    --primary-white-color: #fff;
 }
 
 .container {
@@ -54,7 +54,7 @@ body {
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (width <=576px) {
 
     .main-info,
     .contact_info_container {
@@ -393,17 +393,11 @@ footer {
 
     font-weight: 400;
     font-size: 10px;
-    line-height: (12px/10px);
+    line-height: 1.2;
     letter-spacing: 0.03em;
 
     color: var(--footer-text-color);
     background-color: var(--footer-background-color);
-
-    @include tablet {
-        font-size: 12px;
-        line-height: (15px/12px);
-        padding: 19px 0;
-    }
 }
 
 .footer {
@@ -439,10 +433,10 @@ footer {
     
 
     animation: heart 1s infinite;
+}
 
-    &:hover {
-        animation: heartblow 5s infinite;
-    }
+.icon:hover {
+    animation: heartblow 5s infinite;
 }
 
 @keyframes heart {
