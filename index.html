@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Résumé</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -465,6 +469,115 @@
             </div>
           </div>
         </div>
+        <div class="container">
+          <div class="resume__block">
+            <h2 class="skills__header">Interests and Hobbies</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide__container">
+                    <img
+                      class="swiper-slide__image"
+                      src="assets/voin.jpg"
+                      alt="knight photo"
+                    />
+                    <p class="swiper-text">
+                      I used to enjoy running through the forest with a sword,
+                      wearing iron armor, and fighting for the honor of fair
+                      ladies.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__container">
+                    <img
+                      class="swiper-slide__image"
+                      src="assets/iron-throne.jpg"
+                      alt="iron throne photo"
+                    />
+                    <p class="swiper-text">
+                      Once, I even seized the Iron Throne.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__container">
+                    <img
+                      class="swiper-slide__image"
+                      src="assets/mountains.jpg"
+                      alt="mountains photo"
+                    />
+                    <p class="swiper-text">
+                      Then I grew wiser and went in search of wisdom in the
+                      mountains.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__container">
+                    <img
+                      class="swiper-slide__image"
+                      src="assets/car.jpg"
+                      alt="car photo"
+                    />
+                    <p class="swiper-text">
+                      I got carried away with traveling and drove across half of
+                      Europe in a car.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__container">
+                    <img
+                      class="swiper-slide__image"
+                      src="assets/egypt.jpg"
+                      alt="egypt photo"
+                    />
+                    <p class="swiper-text">
+                      I have been to three parts of the world and two
+                      continents. Sometimes I had to travel on strange animals.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__container">
+                    <img
+                      class="swiper-slide__image"
+                      src="assets/sailing.png"
+                      alt="sail vessel photo"
+                    />
+                    <p class="swiper-text">
+                      And now I am deeply in love with sailing. It's a lifelong
+                      passion of mine.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__container">
+                    <img
+                      class="swiper-slide__image"
+                      src="assets/race.jpg"
+                      alt="sail race photo"
+                    />
+                    <p class="swiper-text">
+                      And of course, sailing races, where would I be without
+                      them and the adrenaline they bring.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -498,5 +611,39 @@
         </div>
       </section>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper('.swiper', {
+        effect: 'coverflow',
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          stretch: 0,
+          rotate: 50,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        },
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
   </body>
 </html>
